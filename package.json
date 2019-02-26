@@ -10,24 +10,56 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.translate",
+		"onCommand:extension.getDegenerateDnaStringFromAAString",
+		"onCommand:extension.getComplementSequenceString",
+		"onCommand:extension.getReverseComplementSequenceString",
+		"onCommand:extension.calculatePercentGC",
+		"onCommand:extension.calculateTm"
 	],
 	"main": "./extension.js",
 	"contributes": {
-		"commands": [{
-            "command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
+		"commands": [
+			{
+				"command": "extension.getReverseComplementSequenceString",
+				"title": "Bio: Reverse Complement DNA to string"
+			},
+			{
+				"command": "extension.translate",
+				"title": "Bio: Translate DNA to AA string"
+			},
+			{
+				"command": "extension.getDegenerateDnaStringFromAAString",
+				"title": "Bio: Get Degenerate DNA from AA string"
+			},
+			{
+				"command": "extension.getComplementSequenceString",
+				"title": "Bio: Complement DNA string"
+			},
+			{
+				"command": "extension.calculatePercentGC",
+				"title": "Bio: Calculate Percent GC of DNA string"
+			},
+			{
+				"command": "extension.calculateTm",
+				"title": "Bio: Calculate Tm of DNA string"
+			}
+		]
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"eslint": "^5.13.0",
+		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"eslint": "^5.13.0",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"bio-parsers": "^5.3.0",
+		"ve-range-utils": "^2.5.2",
+		"ve-sequence-utils": "^3.3.17"
 	}
 }
