@@ -11,13 +11,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.translate",
+		"onCommand:extension.getAminoAcidStringFromSequenceString",
 		"onCommand:extension.getDegenerateDnaStringFromAAString",
 		"onCommand:extension.getComplementSequenceString",
 		"onCommand:extension.getReverseComplementSequenceString",
 		"onCommand:extension.calculatePercentGC",
 		"onCommand:extension.calculateTm"
 	],
+	"repository": "https://github.com/TeselaGen/vscode-bio-utils",
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
@@ -26,7 +27,7 @@
 				"title": "Bio: Reverse Complement DNA to string"
 			},
 			{
-				"command": "extension.translate",
+				"command": "extension.getAminoAcidStringFromSequenceString",
 				"title": "Bio: Translate DNA to AA string"
 			},
 			{
