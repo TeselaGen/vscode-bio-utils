@@ -11,6 +11,11 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onCommand:extension.convertGenbankToTeselagenJson",
+		"onCommand:extension.convertSnapgeneToGenbank",
+		"onCommand:extension.convertFastaToGenbank",
+		"onCommand:extension.convertGenbankToFasta",
+		"onCommand:extension.convertGenbankToBed",
 		"onCommand:extension.getAminoAcidStringFromSequenceString",
 		"onCommand:extension.getDegenerateDnaStringFromAAString",
 		"onCommand:extension.getComplementSequenceString",
@@ -25,6 +30,26 @@
 	"icon": "logo.png",
 	"contributes": {
 		"commands": [
+			{
+				"command": "extension.convertGenbankToTeselagenJson",
+				"title": "Bio: Convert .gb (Genbank) to TeselaGen .json"
+			},
+			{
+				"command": "extension.convertFastaToGenbank",
+				"title": "Bio: Convert .fasta to .gb (Genbank)"
+			},
+			{
+				"command": "extension.convertSnapgeneToGenbank",
+				"title": "Bio: Convert .dna (Snapgene) to .gb (Genbank)"
+			},
+			{
+				"command": "extension.convertGenbankToBed",
+				"title": "Bio: Convert .gb (Genbank) to .bed"
+			},
+			{
+				"command": "extension.convertGenbankToFasta",
+				"title": "Bio: Convert .gb (Genbank) to .fasta"
+			},
 			{
 				"command": "extension.getReverseComplementSequenceString",
 				"title": "Bio: Reverse Complement DNA to string"
@@ -64,6 +89,7 @@
 	},
 	"dependencies": {
 		"bio-parsers": "^5.3.0",
+		"p-map-series": "^1.0.0",
 		"ve-range-utils": "^2.5.2",
 		"ve-sequence-utils": "^3.3.17"
 	}
