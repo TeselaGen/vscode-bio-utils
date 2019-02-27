@@ -2,7 +2,7 @@
 	"name": "vscode-bio-utils",
 	"displayName": "vscode-bio-utils",
 	"description": "biology utils for vscode",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publisher": "teselagen",
 	"engines": {
 		"vscode": "^1.31.0"
