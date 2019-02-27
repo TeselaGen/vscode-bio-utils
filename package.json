@@ -22,7 +22,7 @@
 	"homepage": "https://github.com/TeselaGen/vscode-bio-utils",
 	"bugs": "https://github.com/TeselaGen/vscode-bio-utils/issues",
 	"main": "./extension.js",
-	"icon": "logo.png",
+	"icon": "logo.jpg",
 	"contributes": {
 		"commands": [
 			{
