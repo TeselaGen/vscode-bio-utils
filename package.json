@@ -2,7 +2,7 @@
 	"name": "vscode-bio-utils",
 	"displayName": "vscode-bio-utils",
 	"description": "biology utils for vscode",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"publisher": "teselagen",
 	"engines": {
 		"vscode": "^1.31.0"
@@ -81,16 +81,16 @@
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
-		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.12.21",
-		"eslint": "^5.13.0",
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28"
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^17.0.35",
+		"eslint": "^8.15.0",
+		"typescript": "^4.6.4",
+		"vscode": "^1.1.37"
 	},
 	"dependencies": {
-		"bio-parsers": "^5.4.0",
-		"p-map-series": "^1.0.0",
-		"ve-range-utils": "^2.5.2",
-		"ve-sequence-utils": "^3.3.26"
+		"bio-parsers": "^8.3.26",
+		"p-map-series": "^3.0.0",
+		"ve-range-utils": "^2.6.5",
+		"ve-sequence-utils": "^5.1.16"
 	}
 }
