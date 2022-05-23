@@ -16,6 +16,7 @@ const {
   getComplementSequenceString,
   getDegenerateDnaStringFromAAString,
   getReverseComplementSequenceString,
+  getReverseSequenceString,
   calculateTm,
   calculatePercentGC
 } = require("ve-sequence-utils");
@@ -131,6 +132,17 @@ function activate(context) {
         // The code you place here will be executed every time your command is executed
         replaceSelections(text => {
           return getReverseComplementSequenceString(text);
+        });
+      }
+    )
+  );
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "extension.getReverseSequenceString",
+      function() {
+        // The code you place here will be executed every time your command is executed
+        replaceSelections(text => {
+          return getReverseSequenceString(text);
         });
       }
     )

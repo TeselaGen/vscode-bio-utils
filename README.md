@@ -13,6 +13,8 @@ To use, select some dna bps on the page and run a command from the command palet
 - Bio: Translate DNA to AA string
 - Bio: Get Degenerate DNA from AA string
 - Bio: Complement DNA string
+- Bio: Reverse Complement DNA string
+- Bio: Reverse DNA string
 - Bio: Calculate Percent GC of DNA string
 - Bio: Calculate Tm of DNA string
 
@@ -23,3 +25,7 @@ To use, either select the text you want to be converted or put your cursor in a 
 - Bio: Convert .dna (Snapgene) to .gb (Genbank)
 - Bio: Convert .gb (Genbank) to .bed
 - Bio: Convert .gb (Genbank) to .fasta
+
+
+# To Publish (Internal Use Only)
+vsce publish

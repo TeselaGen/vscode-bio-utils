@@ -2,7 +2,7 @@
 	"name": "vscode-bio-utils",
 	"displayName": "vscode-bio-utils",
 	"description": "biology utils for vscode",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"publisher": "teselagen",
 	"engines": {
 		"vscode": "^1.31.0"
@@ -20,6 +20,7 @@
 		"onCommand:extension.getDegenerateDnaStringFromAAString",
 		"onCommand:extension.getComplementSequenceString",
 		"onCommand:extension.getReverseComplementSequenceString",
+		"onCommand:extension.getReverseSequenceString",
 		"onCommand:extension.calculatePercentGC",
 		"onCommand:extension.calculateTm"
 	],
@@ -53,6 +54,10 @@
 			{
 				"command": "extension.getReverseComplementSequenceString",
 				"title": "Bio: Reverse Complement DNA to string"
+			},
+			{
+				"command": "extension.getReverseSequenceString",
+				"title": "Bio: Reverse DNA to string"
 			},
 			{
 				"command": "extension.getAminoAcidStringFromSequenceString",
