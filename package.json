@@ -2,7 +2,7 @@
 	"name": "vscode-bio-utils",
 	"displayName": "vscode-bio-utils",
 	"description": "biology utils for vscode",
-	"version": "0.0.11",
+	"version": "0.0.12",
 	"publisher": "teselagen",
 	"engines": {
 		"vscode": "^1.31.0"
@@ -96,6 +96,6 @@
 		"bio-parsers": "^8.3.26",
 		"p-map-series": "^3.0.0",
 		"ve-range-utils": "^2.6.5",
-		"ve-sequence-utils": "^5.1.16"
+		"ve-sequence-utils": "^5.1.18"
 	}
 }

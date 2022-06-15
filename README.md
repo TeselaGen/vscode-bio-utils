@@ -28,4 +28,5 @@ To use, either select the text you want to be converted or put your cursor in a 
 
 
 # To Publish (Internal Use Only)
+bump version
 vsce publish
